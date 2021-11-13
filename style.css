@@ -103,21 +103,3 @@ h1{
 .left-navegation ul li:first-child{
     margin-left: 3.5vw;   
 }
-
-@media screen and (max-width: 600px){
-    #main{
-        display: block;
-        width: 15px;
-    }
-    .left-navegation ul{
-        flex-direction: column;
-        text-align: left;
-    }
-    .left-navegation ul li{
-        margin: 0px;
-    }
-    .left-navegation ul li:first-child{
-        margin: 0px;
-    }
-
-}
