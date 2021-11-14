@@ -144,15 +144,22 @@ h1{
     position: absolute;
     top: 50%;
     right: 50%;
+    background-color: var(--color-bt);
+    color: white;
 }
 
 .categorias{
     display: flex;
-    justify-content: space-around;
-    align-items: center;
-    max-width: 80%;
+    justify-content: center;
+    width: 100%;
+}
+.categorias ul{
+    display: flex;
+    justify-content: space-evenly;
+    width: 80%;
+
 }
 
-.categorias a img{
+.categorias ul li a img{
     width: 49px;
 }
