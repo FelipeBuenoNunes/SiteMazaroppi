@@ -21,6 +21,7 @@ font-family: 'Sanchez', serif;
     --color-bar : #83A603;
 
     --heigth-img: clamp(1.5rem, calc(5vw - 0.25rem), 4rem);
+    --width-banner: clamp(15rem, calc(60vw - 0.4rem), 80rem);
 
     --font-16: clamp(0.3em ,calc(1.5vw - 0.2em), 1em);
     --font-18: clamp(0.4em, calc(2vw - 0.2em), 1.125em);
@@ -71,8 +72,8 @@ h1{
 .left-navegation nav ul li a{
     color: black;
     transition: 0.2s;
-
 }
+
 .left-navegation nav ul li a:hover{
     border-top: 4px solid var(--color-tittle);
 }
@@ -134,6 +135,11 @@ h1{
     transition: 0.2s;
 }
 
+.imgBanner {
+    width: var(--width-banner);
+    border-radius: clamp(2px, calc(2vw - 0.1rem), 20px);
+}
+
 #container{
     display: flex;
     position: relative;
@@ -141,25 +147,77 @@ h1{
     align-items: center;
 }
 #subs{
+    display: flex;
+    flex-direction: column;
     position: absolute;
-    top: 50%;
-    right: 50%;
-    background-color: var(--color-bt);
+    top: 30%;
+    right: 45%;
     color: white;
+    text-align: center;
+}
+
+#btn-saiba{
+    padding: clamp(.5rem, calc(0.5vw - 0.10rem), 2.5rem) clamp(1.0rem, calc(1vw - 0.25rem), 5rem);
+    background-color: #37D581;
+    border-radius: clamp(0.5px, calc(1vw - 0.1rem), 10px);
+    margin-top: 40px;
 }
 
 .categorias{
     display: flex;
     justify-content: center;
     width: 100%;
+    margin-top: clamp(5px, calc(5vw - .1rem), 60px);
 }
 .categorias ul{
     display: flex;
     justify-content: space-evenly;
-    width: 80%;
+    width: 60%;
 
 }
 
 .categorias ul li a img{
-    width: 49px;
+    width: clamp(1rem, calc(3vw - 0.1rem), 4rem);
+    padding: clamp(.10rem, calc(1vw - 0.25rem), 7rem);
+    background-color: #E89F71;
+    border-radius: clamp(2px, calc(2vw - 0.1rem), 20px);
+}
+
+/* Botão de procura no site */
+
+.search {
+    width: 50%;
+    position: relative;
+    display: flex;
+}
+
+.search>input {
+    width: 100%;
+    border: none;
+    padding-left: 10px;
+    height: 81px;
+    border-radius: 5px 0 0 5px;
+    color: #D6352D;
+    background-color: rgba(191, 109, 78,0.1);
+}
+
+.search>input:focus {
+    color: #DA6216;
+}
+
+.search>button {
+    width: 40px;
+    height: 36px;
+    border: none;
+    background-color: rgba(191, 109, 78,0.1);
+    align-items: center;
+    border-radius: 0 5px 5px 0;
+    cursor: pointer;
+    justify-content: center;
+}
+
+.wrapper {
+    width: 40%;
+    position: absolute;
+    margin-top: clamp(5px, calc(5vw - .1rem), 60px);
 }
