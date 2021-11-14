@@ -69,6 +69,15 @@ h1{
     font-size: var(--font-18);
 }
 
+.left-navegation nav ul li a{
+    color: black;
+    transition: 0.2s;
+
+}
+.left-navegation nav ul li a:hover{
+    border-top: 4px solid var(--color-tittle);
+}
+
 .profile ul{
     display: flex;
     align-items: center;
@@ -91,15 +100,49 @@ h1{
     background-color: var(--color-bt);
 }
 
+#btn-join:hover{
+    padding: clamp(2px, calc(1vw - 0.1rem), 7px) clamp(3.4px, calc(1.2vw - 0.1rem), 12px);
+    color: var(--color-bt);
+    box-shadow: 0px 0px 1px 2px var(--color-bt);
+    border-radius: clamp(1px, calc(1vw - 0.1rem), 10px);
+    background-color: white;
+    transition: 0.5s;
+}
+
 .profile ul li:last-child img{
     height: clamp(1rem, calc(4vw - 0.5rem), 2.25rem);
     width: auto;
+    margin-right: 3vw;
 }
 
 .left-navegation ul li{
     margin-left: 2.5vw;   
     flex-shrink: 0; 
 }
+
 .left-navegation ul li:first-child{
     margin-left: 3.5vw;   
+}
+
+.profile ul li{
+    margin-right: 2vw;
+}
+.profile ul li a{
+    color: var(--color-bt);
+}
+.profile ul li:first-child:hover{
+    border-top: 4px solid var(--color-bt);
+    transition: 0.2s;
+}
+
+#container{
+    display: flex;
+    position: relative;
+    justify-content: center;
+    align-items: center;
+}
+#subs{
+    position: absolute;
+    top: 50%;
+    right: 50%;
 }
