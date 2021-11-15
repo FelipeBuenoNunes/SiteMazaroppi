@@ -22,6 +22,7 @@ font-family: 'Sanchez', serif;
 
     --heigth-img: clamp(1.5rem, calc(5vw - 0.25rem), 4rem);
     --width-banner: clamp(15rem, calc(60vw - 0.4rem), 80rem);
+    --margin-82: clamp(0.8rem, calc(10vw - 1rem), 82px);
 
     --font-16: clamp(0.3em ,calc(1.5vw - 0.2em), 1em);
     --font-18: clamp(0.4em, calc(2vw - 0.2em), 1.125em);
@@ -132,6 +133,11 @@ h1{
     transition: 0.2s;
 }
 
+main{
+    display: flex;
+    flex-direction: column;
+}
+
 main > section{
     display: flex;
     justify-content: center;
@@ -171,7 +177,7 @@ main > section{
     border-radius: clamp(0.5px, calc(1vw - 0.1rem), 10px);
     font-family: 'Sanchez', serif;
     font-size: var(--font-19);
-    margin-top: clamp(3px, calc(5vw - 0.6rem), 30px);
+    margin-top: clamp(2px, calc(5vw - 0.6rem), 30px);
 }
 
 .categorias{
@@ -183,7 +189,7 @@ main > section{
 .categorias ul{
     display: flex;
     justify-content: space-evenly;
-    width: 60%;
+    width: 55%;
 
 }
 
@@ -202,48 +208,63 @@ main > section{
     display: flex;
 }
 
-.search>input {
-    width: 692px;
-    border: none;
-    padding-left: 10px;
-    height: 81px;
+.search > input {
+    width: clamp(5rem, calc(55vw - 10rem), 37rem);
+    height: var(--margin-82);
     border-radius: 0 27px 27px 0;
     color: #D6352D;
     background-color: rgba(191, 109, 78,0.1);
+    margin-right: 4%;
 }
 
-.search>input:focus {
+.search > input:focus {
     color: #DA6216;
 }
 
-.search>button {
-    width: 82px;
-    height: 82px;
-    border: none;
+.search > button{
+    width: var(--margin-82);
+    height: var(--margin-82);
     background-color: rgba(191, 109, 78,0.1);
     border-radius: 27px 0 0 27px;
     cursor: pointer;
 }
 
-.search>button>img{
-    width: 30px;
-    margin-left: 20px;
+.filter{
+    width: var(--margin-82);
+    height: var(--margin-82);
 }
 
-.search>input::placeholder{
+.search>button>img{
+    width: clamp(10px, calc(3vw - 0.4rem), 30px);
+    margin-left: var(--font-19);
+}
+
+.procurar::placeholder{
     color: rgba(218, 98, 22, 0.6);
-    font-size: 20px;
+    font-size: var(--font-19);
 }
 
 .wrapper {
-    width: 58%;
     margin-top: clamp(5px, calc(5vw - .1rem), 60px);
     display: flex;
-    margin-left: 21%;
+    align-self: center;
 }
 
+/*Banner de ofertas*/
+#banner-oferta{
+    display: flex;
+    justify-content: center;
+    width: 100%;
+}
+#banner-oferta img{
+    position: relative;
+    width: 50%;
+}
+#banner-text{
+    position: absolute;
+}
 
-/*PARTE DOS PRODUROS*/
+/*PARTE DOS PRODUTOS*/
 
 .produtos{
     display: flex;
