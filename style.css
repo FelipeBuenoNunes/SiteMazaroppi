@@ -19,6 +19,7 @@ font-family: 'Sanchez', serif;
     --color-bt: #D6352D;
     --color-laj: #DA6216;
     --color-bar : #83A603;
+    --color-green: #37d581;
 
     --heigth-img: clamp(1.5rem, calc(5vw - 0.25rem), 4rem);
     --width-banner: clamp(15rem, calc(60vw - 0.4rem), 80rem);
@@ -27,6 +28,7 @@ font-family: 'Sanchez', serif;
     --font-16: clamp(0.3em ,calc(1.5vw - 0.2em), 1em);
     --font-18: clamp(0.4em, calc(2vw - 0.2em), 1.125em);
     --font-19: clamp(0.38em, calc(2vw - 0.2em), 1.1875em);
+    --font-50: clamp(0.7em, calc(4vw - 0.4em), 3.125em);
 }
 
 header{
@@ -252,16 +254,42 @@ main > section{
 
 /*Banner de ofertas*/
 #banner-oferta{
+    position: relative;
     display: flex;
     justify-content: center;
     width: 100%;
 }
 #banner-oferta img{
-    position: relative;
-    width: 50%;
+    width: 60%;
 }
 #banner-text{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 2vw;
     position: absolute;
+    align-self: center;
+    font-family: 'Roboto', sans-serif;
+    margin-left: 18%;
+    margin-top: 5%;
+}
+
+#banner-text > p{
+    font-family: 'Roboto', sans-serif;
+    font-weight: 600;
+    font-size: var(--font-50);
+    color: white;
+}
+
+#banner-text > a{
+    font-size: var(--font-18);
+    color: var(--color-green);
+    background-color: white;
+    padding: clamp(3px, calc(2vw - 0.2rem), 10px);
+    border-radius: clamp(2px, calc(2vw - 0.2rem), 8px);
+    margin-right: 30%;
+    font-weight: 600;
 }
 
 /*PARTE DOS PRODUTOS*/
@@ -291,7 +319,7 @@ main > section{
 }
 
 .produtos p {
-    color: rgba(55, 213, 129, 1);
+    color: var(--color-green);
     font-size: 20px;
     margin-top: 5px;
 }
