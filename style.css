@@ -25,10 +25,7 @@ font-family: 'Sanchez', serif;
 
     --font-16: clamp(0.3em ,calc(1.5vw - 0.2em), 1em);
     --font-18: clamp(0.4em, calc(2vw - 0.2em), 1.125em);
-}
-
-#main{
-    display: none;
+    --font-19: clamp(0.38em, calc(2vw - 0.2em), 1.1875em);
 }
 
 header{
@@ -135,32 +132,46 @@ h1{
     transition: 0.2s;
 }
 
-.imgBanner {
+main > section{
+    display: flex;
+    justify-content: center;
+}
+
+#container img {
     width: var(--width-banner);
     border-radius: clamp(2px, calc(2vw - 0.1rem), 20px);
 }
 
 #container{
-    display: flex;
+    display: inline-block;
     position: relative;
-    justify-content: center;
-    align-items: center;
+    margin: 0 auto;
 }
 #subs{
+    width: 100%;
     display: flex;
     flex-direction: column;
     position: absolute;
-    top: 30%;
-    right: 45%;
+    top: 3vw;
+    left: 0vw;
     color: white;
     text-align: center;
 }
 
+#subs p{
+    font-family: 'Sanchez', serif;
+    font-size: var(--font-19);
+}
+
 #btn-saiba{
-    padding: clamp(.5rem, calc(0.5vw - 0.10rem), 2.5rem) clamp(1.0rem, calc(1vw - 0.25rem), 5rem);
+    padding: clamp(0.1rem, calc(1vw - 0.1rem), 0.7rem);
+    width: 10vw;
+    align-self: center;
     background-color: #37D581;
     border-radius: clamp(0.5px, calc(1vw - 0.1rem), 10px);
-    margin-top: 40px;
+    font-family: 'Sanchez', serif;
+    font-size: var(--font-19);
+    margin-top: clamp(3px, calc(5vw - 0.6rem), 30px);
 }
 
 .categorias{
