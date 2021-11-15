@@ -267,19 +267,56 @@ main > section{
 /*PARTE DOS PRODUTOS*/
 
 .produtos{
-    display: flex;
+    display: block;
+    width: 86%;
+    margin-left: 7%;
+    margin-top: 69px;
 }
 
-.produtos div {
-    display: flex;
-   flex-direction: column;
-   align-items: center;
+.secao figure {
+    width: 203px;
+    height: 258px;
+    display: flex; 
+    flex-direction: column;
+    align-items: center;
+    border-radius: 22px;
+    border: 1px red solid;
+    justify-content: center;
+    padding-top: 8px;
 }
 
 .produtos h3 {
-    font-size: 25px;
+    font-size: 30px;
+    margin-top: 20px;
 }
 
 .produtos p {
     color: rgba(55, 213, 129, 1);
+    font-size: 20px;
+    margin-top: 5px;
+}
+
+.secao{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 18px;
+}
+
+img[alt="botão adicionar"]{
+    margin-left: 130px;
+    border-top: 3px;
+}
+
+.titulo{
+    display: flex;
+    justify-content: space-between;
+}
+
+.titulo h2{
+    font-size: 36px;
+}
+
+.titulo a{
+    font-size: 24px;
+    color: rgba(218, 98, 22, 0.8);
 }
