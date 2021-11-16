@@ -416,17 +416,21 @@ footer div:first-child > p{
     min-width: 5px;    
 }
 
+#central p{
+    white-space: nowrap;
+}
+
 #formas-pag{
     width: 10%;
     white-space: nowrap;
 }
 
 #social img{
-    width: 20%;
+    width: 2vw;
 }
 
 #social img:first-child{
-    width: 8%;
+    width: 0.8vw;
 }
 #social figure{
     gap: 8%;
