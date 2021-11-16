@@ -192,12 +192,17 @@ main>section {
     color: white;
 }
 
+#btn-saiba:hover{
+    background-color:#37d581b2;
+}
+
 .categorias {
     display: flex;
     justify-content: center;
     width: 100%;
     margin-top: clamp(5px, calc(5vw - 0.1rem), 60px);
 }
+
 
 .categorias ul {
     display: flex;
@@ -210,6 +215,7 @@ main>section {
     flex-direction: column;
     align-items: center;
     font-size: var(--font-16);
+    font-family: 'Roboto', sans-serif;
 }
 
 .categorias ul li a img {
@@ -217,6 +223,10 @@ main>section {
     padding: clamp(0.10rem, calc(1vw - 0.25rem), 7rem);
     background-color: #E89F71;
     border-radius: clamp(2px, calc(2vw - 0.1rem), 20px);
+}
+
+.categorias ul li a img:hover{
+    background-color: #e89f7185;
 }
 
 /* Botão de procura no site */
@@ -284,6 +294,10 @@ main>section {
     width: 100%;
 }
 
+#banner-oferta a:hover{
+    background-color: rgba(255, 255, 255, 0.74);
+}
+
 #banner-oferta img {
     width: 65%;
 }
@@ -338,6 +352,10 @@ main>section {
     justify-content: center;
     padding-top: 8px;
     box-shadow: 0 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+img[alt="botão adicionar"]:hover{
+    cursor: pointer;
 }
 
 .produtos h3 {
@@ -468,7 +486,7 @@ footer p:hover{
 .modal{
     display: flex;
     width: 449px;
-    border: 2px solid red;
+    border: 3px solid rgba(218, 98, 22, 0.8);
     justify-content: center;
     align-items: center;
     border-radius: 50px;
@@ -581,17 +599,6 @@ footer p:hover{
 
 .modal-container.mostrar{
     display: flex;
-}
-
-@keyframes modal{
-    from{
-        opacity: 0;
-        transform: translate3d(0, -60px 0);
-    }
-    to {
-        opacity: 1;
-        transform: translate3d(0, 0, 0);
-    }
 }
 
 .mostrar .modal{
