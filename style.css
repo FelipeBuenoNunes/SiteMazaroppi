@@ -153,13 +153,6 @@ main > section{
     flex-direction: column;
 }
 
-#nomes ul{
-    display: flex;
-    justify-content: space-evenly;
-    width: 75%;
-
-}
-
 #container > img {
     width: var(--width-banner);
     border-radius: 0.8vw;
@@ -210,6 +203,13 @@ main > section{
     justify-content: space-evenly;
     width: 75%;
 
+}
+
+.categorias ul li{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-size: var(--font-16);
 }
 
 .categorias ul li a img{
@@ -298,7 +298,7 @@ main > section{
     font-weight: 600;
     font-size: var(--font-50);
     color: white;
-    
+
 }
 
 #banner-text > a{
