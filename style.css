@@ -342,7 +342,7 @@ main>section {
 }
 
 .produtos p {
-    color: var(--color-green);
+    color: black;
     font-size: var(--font-19);
     margin-top: 5px;
 }
@@ -393,7 +393,7 @@ main>section {
 footer {
     display: flex;
     justify-content: space-evenly;
-    margin-top: 5%;
+    margin: 5% 0;
 }
 
 footer>div>figure {
@@ -418,6 +418,16 @@ footer div:first-child>p {
     color: #8C0300;
     font-family: 'Playball', cursive;
     align-self: flex-end;
+}
+
+footer p,
+footer h3{
+    line-height: 1.8;   
+    cursor: pointer;
+}
+footer p:hover,
+footer h3:hover{
+    color: var(--color-bt);   
 }
 
 .footer-nav {
@@ -450,3 +460,7 @@ footer div:first-child>p {
 #social figure {
     gap: 8%;
 }
+
+/*.profile ul li:first-child:hover
+#btn-join:hover
+.left-navegation nav ul li a:hover*/
