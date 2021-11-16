@@ -367,3 +367,67 @@ img[alt="botão adicionar"]{
     font-size: 24px;
     color: rgba(218, 98, 22, 0.8);
 }
+
+#line{
+    margin-top: 5%;
+    width: 100%;
+    height: 1px;
+    background-color: rgb(104, 104, 104);
+}
+
+footer{
+    display: flex;
+    justify-content: space-evenly;
+    margin-top: 5%;
+}
+
+footer > div > figure{
+    display: flex;
+}
+
+footer > div{
+    display: flex;
+    flex-direction: column;    
+}
+
+footer > div > figure > img{
+    width: clamp(1.5rem, calc(5vw - 0.25rem), 4rem);
+}
+
+footer > div > figure > h1{
+    font-size: clamp(10px, calc(2.5vw - 0.25rem), 1.5rem);
+}
+
+footer div:first-child > p{
+    font-size: var(--font-19);
+    color: #8C0300;
+    font-family: 'Playball', cursive;
+    align-self: flex-end;
+}
+
+.footer-nav{
+    font-size: var(--font-16);
+    font-family: 'Philosopher', sans-serif;
+}
+
+#sobre img,
+#central img{
+    width: 8%;
+    min-width: 5px;    
+}
+
+#formas-pag{
+    width: 10%;
+    white-space: nowrap;
+}
+
+#social img{
+    width: 20%;
+}
+
+#social img:first-child{
+    width: 8%;
+}
+#social figure{
+    gap: 8%;
+}
