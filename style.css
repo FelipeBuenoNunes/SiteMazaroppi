@@ -430,8 +430,7 @@ footer h3{
     line-height: 1.8;   
     cursor: pointer;
 }
-footer p:hover,
-footer h3:hover{
+footer p:hover{
     color: var(--color-bt);   
 }
 
