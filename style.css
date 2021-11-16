@@ -1,5 +1,4 @@
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@700&family=Philosopher:ital,wght@0,400;1,400;1,700&family=Playball&family=Roboto&family=Sanchez&display=swap');
-
 /*
 font-family: 'Open Sans', sans-serif;
 font-family: 'Philosopher', sans-serif;
@@ -8,24 +7,22 @@ font-family: 'Roboto', sans-serif;
 font-family: 'Sanchez', serif;
 */
 
-*{
+* {
     margin: 0;
     border: 0;
     padding: 0;
 }
 
-:root{
+:root {
     --color-tittle: #365902;
     --color-bt: #D6352D;
     --color-laj: #DA6216;
-    --color-bar : #83A603;
+    --color-bar: #83A603;
     --color-green: #37d581;
-
     --heigth-img: clamp(1.5rem, calc(5vw - 0.25rem), 4rem);
     --width-banner: clamp(15rem, calc(80vw - 0.4rem), 75rem);
     --margin-82: clamp(0.8rem, calc(10vw - 1rem), 82px);
-
-    --font-16: clamp(0.3em ,calc(1.5vw - 0.2em), 1em);
+    --font-16: clamp(0.3em, calc(1.5vw - 0.2em), 1em);
     --font-18: clamp(0.4em, calc(2vw - 0.2em), 1.125em);
     --font-25: clamp(0.38em, calc(2vw - 0.2em), 1.5625em);
     --font-19: clamp(0.38em, calc(2vw - 0.2em), 1.1875em);
@@ -33,61 +30,61 @@ font-family: 'Sanchez', serif;
     --font-50: clamp(0.7em, calc(4vw - 0.4em), 3.125em);
 }
 
-header{
+header {
     display: flex;
     justify-content: space-between;
     align-items: center;
     margin-top: 2.5vw;
 }
 
-ul{
+ul {
     list-style: none;
 }
 
-a{
+a {
     text-decoration: none;
 }
 
-.left-navegation{
+.left-navegation {
     display: flex;
     align-items: center;
 }
 
-.left-navegation img{
+.left-navegation img {
     height: var(--heigth-img);
     width: auto;
     margin-left: 2vw;
 }
 
-h1{
+h1 {
     font-family: 'Philosopher', sans-serif;
     font-size: clamp(12px, calc(2.5vw - 0.25rem), 1.75rem);
     color: var(--color-tittle);
 }
 
-.left-navegation ul{
+.left-navegation ul {
     display: flex;
     font-family: 'Sanchez', serif;
     font-size: var(--font-18);
 }
 
-.left-navegation nav ul li a{
+.left-navegation nav ul li a {
     color: black;
     transition: 0.2s;
 }
 
-.left-navegation nav ul li a:hover{
+.left-navegation nav ul li a:hover {
     border-top: 4px solid var(--color-tittle);
 }
 
-.profile ul{
+.profile ul {
     display: flex;
     align-items: center;
     font-family: 'Open Sans', sans-serif;
     font-size: var(--font-16);
 }
 
-#bar{
+#bar {
     width: clamp(1px, calc(1vw - 0.3rem), 3px);
     height: var(--heigth-img);
     border: 1px solid var(--color-tittle);
@@ -95,14 +92,14 @@ h1{
     margin: 0 0.8vw;
 }
 
-#btn-join{
+#btn-join {
     padding: clamp(2px, calc(1vw - 0.1rem), 7px) clamp(3.4px, calc(1.2vw - 0.1rem), 12px);
     color: white;
     border-radius: clamp(1px, calc(1vw - 0.1rem), 10px);
     background-color: var(--color-bt);
 }
 
-#btn-join:hover{
+#btn-join:hover {
     padding: clamp(2px, calc(1vw - 0.1rem), 7px) clamp(3.4px, calc(1.2vw - 0.1rem), 12px);
     color: var(--color-bt);
     box-shadow: 0px 0px 1px 2px var(--color-bt);
@@ -111,60 +108,63 @@ h1{
     transition: 0.5s;
 }
 
-.profile ul li:last-child img{
+.profile ul li:last-child img {
     height: clamp(1rem, calc(4vw - 0.5rem), 2.25rem);
     width: auto;
     margin-right: 3vw;
 }
 
-.left-navegation ul li{
-    margin-left: 2.5vw;   
-    flex-shrink: 0; 
+.left-navegation ul li {
+    margin-left: 2.5vw;
+    flex-shrink: 0;
 }
 
-.left-navegation ul li:first-child{
-    margin-left: 3.5vw;   
+.left-navegation ul li:first-child {
+    margin-left: 3.5vw;
 }
 
-.profile ul li{
+.profile ul li {
     margin-right: 2vw;
 }
-.profile ul li a{
+
+.profile ul li a {
     color: var(--color-bt);
 }
-.profile ul li:first-child:hover{
+
+.profile ul li:first-child:hover {
     border-top: 4px solid var(--color-bt);
     transition: 0.2s;
 }
 
-main{
+main {
     display: flex;
     flex-direction: column;
 }
 
-#nomes{
+#nomes {
     display: flex;
     justify-content: center;
 }
 
-main > section{
+main>section {
     display: flex;
     justify-content: center;
     flex-direction: column;
 }
 
-#container > img {
+#container>img {
     width: var(--width-banner);
     border-radius: 0.8vw;
 }
 
-#container{
+#container {
     display: inline-block;
     position: relative;
     margin: 0 auto;
     margin-top: 5%;
 }
-#subs{
+
+#subs {
     width: 100%;
     display: flex;
     flex-direction: column;
@@ -175,12 +175,12 @@ main > section{
     text-align: center;
 }
 
-#subs p{
+#subs p {
     font-family: 'Sanchez', serif;
     font-size: var(--font-25);
 }
 
-#btn-saiba{
+#btn-saiba {
     padding: clamp(0.1rem, calc(1vw - 0.1rem), 0.7rem);
     width: 10vw;
     align-self: center;
@@ -192,27 +192,27 @@ main > section{
     color: white;
 }
 
-.categorias{
+.categorias {
     display: flex;
     justify-content: center;
     width: 100%;
     margin-top: clamp(5px, calc(5vw - 0.1rem), 60px);
 }
-.categorias ul{
+
+.categorias ul {
     display: flex;
     justify-content: space-evenly;
     width: 75%;
-
 }
 
-.categorias ul li{
+.categorias ul li {
     display: flex;
     flex-direction: column;
     align-items: center;
     font-size: var(--font-16);
 }
 
-.categorias ul li a img{
+.categorias ul li a img {
     width: clamp(1rem, calc(4vw - 0.1rem), 4rem);
     padding: clamp(0.10rem, calc(1vw - 0.25rem), 7rem);
     background-color: #E89F71;
@@ -227,39 +227,39 @@ main > section{
     display: flex;
 }
 
-.search > input {
+.search>input {
     width: clamp(12rem, calc(70vw - 10rem), 50rem);
     height: var(--margin-82);
     line-height: var(--margin-82);
     border-radius: 0 27px 27px 0;
     color: #D6352D;
-    background-color: rgba(191, 109, 78,0.1);
+    background-color: rgba(191, 109, 78, 0.1);
     margin-right: 4%;
 }
 
-.search > input:focus {
+.search>input:focus {
     color: #DA6216;
 }
 
-.search > button{
+.search>button {
     width: var(--margin-82);
     height: var(--margin-82);
-    background-color: rgba(191, 109, 78,0.1);
+    background-color: rgba(191, 109, 78, 0.1);
     border-radius: 27px 0 0 27px;
     cursor: pointer;
 }
 
-.filter{
+.filter {
     width: var(--margin-82);
     height: var(--margin-82);
 }
 
-.search>button>img{
+.search>button>img {
     width: clamp(10px, calc(3vw - 0.4rem), 30px);
     margin-left: var(--font-19);
 }
 
-.procurar::placeholder{
+.procurar::placeholder {
     color: rgba(218, 98, 22, 0.6);
     font-size: var(--font-ph);
 }
@@ -271,16 +271,19 @@ main > section{
 }
 
 /*Banner de ofertas*/
-#banner-oferta{
+
+#banner-oferta {
     position: relative;
     display: flex;
     justify-content: center;
     width: 100%;
 }
-#banner-oferta img{
+
+#banner-oferta img {
     width: 65%;
 }
-#banner-text{
+
+#banner-text {
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -293,15 +296,14 @@ main > section{
     margin-top: 5%;
 }
 
-#banner-text > p{
+#banner-text>p {
     font-family: 'Roboto', sans-serif;
     font-weight: 600;
     font-size: var(--font-50);
     color: white;
-
 }
 
-#banner-text > a{
+#banner-text>a {
     font-size: var(--font-18);
     color: var(--color-green);
     background-color: white;
@@ -313,126 +315,138 @@ main > section{
 
 /*PARTE DOS PRODUTOS*/
 
-.produtos{
+.produtos {
     display: block;
     width: 86%;
     margin-left: 7%;
-    margin-top: 69px;
+    margin-top: 5vw;
 }
 
 .secao figure {
-    width: 230px;
-    height: 258px;
-    display: flex; 
+    width: 17%;
+    height: 16.5vw;
+    /*258px*/
+    display: flex;
     flex-direction: column;
     align-items: center;
-    border-radius: 22px;
+    border-radius: 1.5vw;
     justify-content: center;
     padding-top: 8px;
-    box-shadow: 0 4px 4px rgba(0,0,0,0.25);
-    
+    box-shadow: 0 4px 4px rgba(0, 0, 0, 0.25);
 }
 
 .produtos h3 {
-    font-size: 30px;
-    margin-top: 20px;
+    font-size: clamp(0.38em, calc(2vw - 0.2em), 1.875em);
+    margin-top: 5%;
+    font-family: 'Roboto', sans-serif;
 }
 
 .produtos p {
     color: var(--color-green);
-    font-size: 20px;
+    font-size: var(--font-19);
     margin-top: 5px;
 }
 
-.secao{
+.secao {
     display: flex;
     justify-content: space-between;
     margin-top: 18px;
 }
 
-img[alt="botão adicionar"]{
-    margin-left: 130px;
-    border-top: 3px;
-}
-
-.titulo{
+.titulo {
     display: flex;
     justify-content: space-between;
 }
 
-.titulo h2{
-    font-size: 36px;
+.titulo h2 {
+    font-family: 'Roboto', sans-serif;
+    font-size: clamp(0.58em, calc(3vw - 0.2em), 2em);
 }
 
-.titulo a{
-    font-size: 24px;
+.titulo a {
+    font-family: 'Roboto', sans-serif;
+    font-size: clamp(0.48em, calc(2vw - 0.2em), 1.5em);
     color: rgba(218, 98, 22, 0.8);
 }
+.titulo a img{
+    width: 1.5vw;
+}
 
-#line{
+.produtos .secao figure img{
+    width: 10vw;
+}
+.produtos .secao figure img[alt="botão adicionar"] {
+    width: 3vw;
+    margin-left: 58%;
+    border-top: 3px;
+}
+
+/*FOOTER*/
+
+#line {
     margin-top: 5%;
     width: 100%;
     height: 1px;
     background-color: rgb(104, 104, 104);
 }
 
-footer{
+footer {
     display: flex;
     justify-content: space-evenly;
     margin-top: 5%;
 }
 
-footer > div > figure{
+footer>div>figure {
     display: flex;
 }
 
-footer > div{
+footer>div {
     display: flex;
-    flex-direction: column;    
+    flex-direction: column;
 }
 
-footer > div > figure > img{
+footer>div>figure>img {
     width: clamp(1.5rem, calc(5vw - 0.25rem), 4rem);
 }
 
-footer > div > figure > h1{
+footer>div>figure>h1 {
     font-size: clamp(10px, calc(2.5vw - 0.25rem), 1.5rem);
 }
 
-footer div:first-child > p{
+footer div:first-child>p {
     font-size: var(--font-19);
     color: #8C0300;
     font-family: 'Playball', cursive;
     align-self: flex-end;
 }
 
-.footer-nav{
+.footer-nav {
     font-size: var(--font-16);
     font-family: 'Philosopher', sans-serif;
 }
 
-#sobre img,
-#central img{
+#sobre img, #central img {
     width: 8%;
-    min-width: 5px;    
+    min-width: 5px;
 }
 
-#central p{
+#central p {
     white-space: nowrap;
 }
 
-#formas-pag{
+#formas-pag {
     width: 10%;
     white-space: nowrap;
 }
 
-#social img{
+#social img {
     width: 2vw;
 }
 
-#social img:first-child{
+#social img:first-child {
     width: 0.8vw;
 }
-#social figure{
+
+#social figure {
     gap: 8%;
 }
