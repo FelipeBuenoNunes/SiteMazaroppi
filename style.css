@@ -142,9 +142,22 @@ main{
     flex-direction: column;
 }
 
+#nomes{
+    display: flex;
+    justify-content: center;
+}
+
 main > section{
     display: flex;
     justify-content: center;
+    flex-direction: column;
+}
+
+#nomes ul{
+    display: flex;
+    justify-content: space-evenly;
+    width: 75%;
+
 }
 
 #container > img {
