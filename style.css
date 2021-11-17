@@ -1,3 +1,9 @@
+ /* 
+    É recomendado criar ao menos duas folhas de estilos para separar estilos gerais de estilos mais específicos.
+    set-style.css => para estilos padrões como as variáveis de estilos, estilos para body, button, input, etc. Tudo que for genérico
+    style.css => para estilos de elementos mais específicos definidos por id ou class
+*/
+
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@700&family=Philosopher:ital,wght@0,400;1,400;1,700&family=Playball&family=Roboto&family=Sanchez&display=swap');
 /*
 font-family: 'Open Sans', sans-serif;
@@ -11,6 +17,14 @@ font-family: 'Sanchez', serif;
     margin: 0;
     border: 0;
     padding: 0;
+    /* => Recomendo incluir 
+    box-sizing: border-box;
+    Este atributo faz com que o tamanho dos elementos sejam definidos no tamanho que vocês declaram no height e width,
+    padding, e border não serão somados à essas dimensões
+
+    Exemplo: Se um elemento possui width: 100px e height: 100px mas possuir padding: 10px, na verdade ele elemento passará
+    a ter 120px por 120px, pq padding é acrescentado na conta. com o box-sizing: border-box não.
+    */
 }
 
 :root {
@@ -29,7 +43,7 @@ font-family: 'Sanchez', serif;
     --font-ph: clamp(0.4em, calc(4vw - 0.8em), 1.6em);
     --font-50: clamp(0.7em, calc(4vw - 0.4em), 3.125em);
 }
-
+   
 header {
     display: flex;
     justify-content: space-between;
@@ -180,7 +194,7 @@ main>section {
     font-size: var(--font-25);
 }
 
-#btn-saiba {
+#btn-saiba { /* Recomendo manter a programação em uma única lingua, preferencialmente inglês. */
     padding: clamp(0.1rem, calc(1vw - 0.1rem), 0.7rem);
     width: 10vw;
     align-self: center;
@@ -407,7 +421,7 @@ img[alt="botão adicionar"]:hover{
 
 /*FOOTER*/
 
-#line {
+#line { /* É uma boa prática criar atributos mais descritivos. */
     margin-top: 5%;
     width: 100%;
     height: 1px;

@@ -1,3 +1,11 @@
+<!-- Resumo => 
+        Design muito bonito o que fizem
+        Boa organização de código
+        Recomendo manter a programação em uma única lingua, preferencialmente inglês.
+        Vocês encontrarão mais feedback ao longo dos arquivos html, css e js
+        O ideal é que a pasta img seja subpasta da pasta assets. dentro da pasta assets podem separar 
+        o que é icone(pasta icons) do que é imagem(pasta images).
+     -->
 <!DOCTYPE html>
 <html lang="pt-BR">
 
@@ -13,7 +21,7 @@
 <body>
     <header>
         <div class="left-navegation">
-            <img src="img/Logo pessoas.svg" alt="Hortifrut Mazzaropi">
+            <img src="img/Logo pessoas.svg" alt="Hortifrut Mazzaropi"> <!--O modo correto de fechamento de tag que fecha em si mesmo é /> no final-->
             <div id="bar"></div>
             <h1>Hortifrut <br /> Mazzaropi</h1>
             <nav>
@@ -34,7 +42,7 @@
     </header>
     <main>
         <section>
-            <div id="container">
+            <div id="container"><!--As propriedades dessa div, poderia estar na propria section e essa div não seria necessaria-->
                 <img src="img/banner.png" alt="Banner principal">
                 <div id="subs">
                     <p>O Programa de Relacionamento do <br />Grupo Hortifruti Mazzaropi</p>
@@ -46,6 +54,8 @@
             <nav class="categorias">
                 <ul>
                     <li><a href="#"><img src="img/verduras.svg" /></a> <span>VERDURAS</span></li>
+                    <!-- Não é necessário span aqui, o nome do item da lista poderia estar inserido dentro da tag a 
+                        <li><a href="#"><img src="img/verduras.svg" />VERDURAS</a></li>  -->
                     <li><a href="#"><img src="img/fruta.svg" /></a> <span>FRUTAS</span></li>
                     <li><a href="#"><img src="img/legumes.svg" /></a> <span>LEGUMES</span></li>
                     <li><a href="#"><img src="img/graos.svg" /></a> <span>GRÃOS</span></li>
@@ -60,7 +70,7 @@
         <div class="all-wrapper">
             <div class="wrapper">
                 <div class="search">
-                    <button type="submit">
+                    <button type="submit"> <!--Button type="submit" espera-se estar dentro de um form-->
                         <img src="img/Lupa.svg" alt="icone procurar" />
                     </button>
                     <input type="text" class="procurar" placeholder="O que você vai querer hoje?" />
@@ -68,7 +78,8 @@
                 <img src="img/btn-categorias.svg" class="filter" />
             </div>
             
-            <script src="script.js"></script>
+            <script src="script.js"></script> <!--recomenda-se colocar o script no final da estrutura html, anes de fechar o body 
+                para que ele possa ser carregado após a renderização de todos os elementos-->
             <div id="modal-promocao" class="modal-container">
                 <div class="modal">
                     <div class="center">
@@ -121,12 +132,12 @@
             <div class="secao">
                 <figure>
                     <img src="img/banana.jpg" alt="imagem de banana">
-                    <h3>Banana</h3>
+                    <h3>Banana</h3><!--Seria mais apropriado usar a tag <figcaption> pois explicita a relação semantica com a tag <figure>-->
                     <p>R$20,00</p>
                     <img src="img/btn-adicionar.svg" alt="botão adicionar">
                 </figure>
                 <figure>
-                    <img src="img/maca.jpg" alt="imagem de maçã">
+                    <img src="img/maca.jpg" alt="imagem de maçã"> <!--A palavra "Imagem" é redundante no atributo alt, não aceitável na codificação com padrões-->
                     <h3>Maçã</h3>
                     <p>R$20,00</p>
                     <img src="img/btn-adicionar.svg" alt="botão adicionar">
